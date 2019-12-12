@@ -21,7 +21,8 @@ from django.conf import settings
 
 urlpatterns = [
     path('api/user/', include('userManage.urls')),  # 导入user应用的urls.py
-   # path('api/homeworkManager/', include('homeworkManage.urls')),
-     path('api/course/', include('courseManage.urls')),
+    path('api/homework/', include('homeworkManage.urls')),
+    path('api/course/', include('courseManage.urls')),
+    path('api/score/', include('scoreManage.urls')),
     path('admin/', admin.site.urls),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

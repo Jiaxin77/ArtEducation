@@ -89,7 +89,6 @@ def login(request):
                 if ret:
                     teacher_ser = TeachersSerializer(teacher)
                     msg = "登录成功"
-
                     mydict = {'result': SUCCESS, 'msg': msg,'data':teacher_ser.data}
                     print(msg)
                     return HttpResponse(json.dumps(mydict), content_type="application/json")
