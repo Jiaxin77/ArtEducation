@@ -27,7 +27,8 @@ SECRET_KEY = '%xx=&***e^c9f)!jrn7zw-7$7v)f%7gny3v2lq&#g#i4j6g#1w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']  #之后域名
+
 
 
 # Application definition
